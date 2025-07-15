@@ -2,6 +2,10 @@
 
 A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot in Turkish language that helps students with internship FAQs by loading a PDF handbook, building a Chroma vector store, and querying an Ollama-powered LLM.
 
+
+<img width="1903" height="927" alt="Untitled2" src="https://github.com/user-attachments/assets/ce8a3ca0-b8ba-4e6d-884a-6c5880de47ce" />
+
+
 ## Features
 
 - **PDF ingestion** & chunking via `langchain`  
