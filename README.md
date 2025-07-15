@@ -1,10 +1,10 @@
 # Intern-RAG
 
-A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot that helps students with internship FAQs by loading a PDF handbook, building a Chroma vector store, and querying an Ollama-powered LLM.
+A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot in Turkish language that helps students with internship FAQs by loading a PDF handbook, building a Chroma vector store, and querying an Ollama-powered LLM.
 
 ## Features
 
-- **PDF ingestion** & chunking via `langchain_community`  
+- **PDF ingestion** & chunking via `langchain`  
 - **Chroma** vector store with Ollama embeddings  
 - **Cross-encoder** reranking for top-k results  
 - **Chat** UI with persistent history (via `shelve`)  
@@ -14,7 +14,7 @@ A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot that helps studen
 
 - Python 3.8+  
 - [Ollama](https://ollama.com/) installed & models pulled  
-- A PDF FAQ at `data/FAQ - CMPE INTERN TR.pdf`  
+- A PDF FAQ at `data/pdf`  
 
 Install Python dependencies:
 ```bash
@@ -33,7 +33,8 @@ pip install -r requirements.txt
 
 2. **Run the app**  
    ```bash
-   streamlit run src/app.py
+   cd src
+   streamlit run app.py
    ```
 
 3. **Chat**  
